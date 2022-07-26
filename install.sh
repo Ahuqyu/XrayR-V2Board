@@ -200,7 +200,7 @@ install_XrayR() {
 
     # Writing json
     echo "正在尝试写入配置文件..."
-    wget https://cdn.jsdelivr.net/gh/missuo/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
+    wget https://cdn.jsdelivr.net/gh/Ahuqyu/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
     sed -i "s/NodeID:.*/NodeID: ${node_id}/g" /etc/XrayR/config.yml
     sed -i "s/NodeType:.*/NodeType: ${node_type}/g" /etc/XrayR/config.yml
     echo ""
@@ -226,8 +226,8 @@ install_XrayR() {
     echo "XrayR 管理脚本使用方法: "
     echo "------------------------------------------"
     echo "XrayR                    - 显示管理菜单 (功能更多)"
-    echo "XrayR start              - 启动 XrayR"
-    echo "XrayR stop               - 停止 XrayR"
+    echo "XrayR start              - 启 XrayR"
+    echo "XrayR stop               - 停 XrayR"
     echo "XrayR restart            - 重启 XrayR"
     echo "XrayR status             - 查看 XrayR 状态"
     echo "XrayR enable             - 设置 XrayR 开机自启"
